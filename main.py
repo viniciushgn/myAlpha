@@ -22,11 +22,11 @@ imageLogo = Image.open('logo.png')
 #recebendo imput---------------------------------------------------------------
 st.image(imageLogo)
 st.write("""  
-#### um programa GUI para auxiliar estratégias simples em finanças.
+#### um programa GUI para auxiliar estratégias quantitativas em finanças.
 """)
 st.markdown("""---""")
 st.markdown("""# Escolha uma ação""")
-stocks = ("^BVSP","AAPL", "GOOG", "MSFT", "GME", "NVDA", "FDX", "FRC", "CL=F", "BTC-USD", )
+stocks = ("^BVSP","^DJI", "^GSPC","^CMC200", "NQ=F", "EURBRL=X", "TSLA", "AAPL", "GOOG", "MSFT", "GME", "NVDA", "FDX", "FRC", "CL=F", "BTC-USD", )
 selected_stock = st.selectbox("Selecione uma ação para a análise", stocks)
 
 #parametro necessario para funcao Prophet make_future_dataframe()--------------
