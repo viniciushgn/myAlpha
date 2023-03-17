@@ -8,4 +8,4 @@
 - yfinance
 - streamlit
 
-URL:<https://viniciushgn-myalpha-main-x1mh36.streamlit.app/>
+## URL: <https://viniciushgn-myalpha-main-x1mh36.streamlit.app/>
