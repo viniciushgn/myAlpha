@@ -26,11 +26,11 @@ st.write("""
 """)
 st.markdown("""---""")
 st.markdown("""# Escolha uma ação""")
-stocks = ("^BVSP","^DJI", "^GSPC","^CMC200", "NQ=F", "EURBRL=X", "TSLA", "AAPL", "GOOG", "MSFT", "GME", "NVDA", "FDX", "FRC", "CL=F", "BTC-USD", )
+stocks = ("^BVSP","^DJI", "^GSPC","^CMC200", "NQ=F", "EURBRL=X", "TSLA", "AAPL", "GOOG", "MSFT", "GME", "NVDA", "FDX", "FRC", "CL=F", "BTC-USD","GS")
 selected_stock = st.selectbox("Selecione uma ação para a análise", stocks)
 
 #parametro necessario para funcao Prophet make_future_dataframe()--------------
-n_years = st.slider("Anos de dados históricos usados ​​para a previsão:", 1 , 4)
+n_years = st.slider("Anos gerados pela analise", 1 , 4)
 period = n_years * 365
 
 #salvando os estados das variaveis acima no cache-----------------------------
